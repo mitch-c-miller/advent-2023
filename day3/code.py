@@ -89,12 +89,12 @@ if __name__ == '__main__':
     target = 'test' if TEST else 'input'
     # test answer: 4361
     # prod answer: 527369
-    with open(f'day 3/{target}.txt', 'r') as schematic_f:
+    with open(f'day3/{target}.txt', 'r') as schematic_f:
         schematic = schematic_f.read().strip().split('\n')
         print(engine(schematic))
        
     # test answer: 467835
     # prod answer: 73074886
-    with open(f'day 3/{target}.txt', 'r') as schematic_f:
+    with open(f'day3/{target}.txt', 'r') as schematic_f:
         schematic = schematic_f.read().strip().split('\n')
         print(engine(schematic, True))

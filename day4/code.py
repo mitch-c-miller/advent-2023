@@ -30,9 +30,8 @@ def part2(game_cards: list[str]) -> int:
         copies.append(1)
     
     for i, match_res in enumerate(matches):
-        for _ in range(copies[i]):
-            for target in range(1, match_res + 1):
-                copies[i + target] += 1
+        for target in range(1, match_res + 1):
+            copies[i + target] += copies[i]
     
     return sum(copies)
 
@@ -41,12 +40,12 @@ if __name__ == '__main__':
     target = 'test' if TEST else 'input'
     # test answer: 13
     # prod answer: 26426
-    with open(f'day 4/{target}.txt', 'r') as data_f:
+    with open(f'day4/{target}.txt', 'r') as data_f:
         data = data_f.read().strip().split('\n')
         print(part1(data))
        
     # test answer: 30
     # prod answer: 
-    with open(f'day 4/{target}.txt', 'r') as data_f:
+    with open(f'day4/{target}.txt', 'r') as data_f:
         data = data_f.read().strip().split('\n')
         print(part2(data))
