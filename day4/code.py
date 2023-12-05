@@ -43,7 +43,7 @@ if __name__ == '__main__':
     with open(f'day4/{target}.txt', 'r') as data_f:
         data = data_f.read().strip().split('\n')
         print(part1(data))
-       
+
     # test answer: 30
     # prod answer: 
     with open(f'day4/{target}.txt', 'r') as data_f:
