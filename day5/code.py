@@ -52,6 +52,6 @@ if __name__ == '__main__':
     # prod answer: 535088217
     # print(seeds(utils.read_input(5, True)))
 
-    # test answer: 
+    # test answer: 46
     # prod answer: 
-    print(seeds(utils.read_input(5, True), 2))
+    print(seeds(utils.read_input(5, False), 2))
